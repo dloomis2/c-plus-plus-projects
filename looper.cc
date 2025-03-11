@@ -1,25 +1,28 @@
 #include <iostream> 
 #include <string>
-//print quarter, half, 3 quarters at 5, 10, and 15
+
+//print quarter, half, 3 quarters at 5, 10, and 15i
+// ***Updated to progress bars***
+// ***Sequence complete at the bottom***
+
 int main(int argc, char *argv[]){
 
   for (int i = 1; i <= 20; i++){
-      std::cout << i << '\n';
+      std::cout << i << " ";
   if (i == 5) {
-      std::cout << " quarter\n";
+      std::cout << "  === 25%\n";
+      } else if (i == 10) {
+      std::cout << " ===== 50%\n"; 
+      } else if (i == 15) {
+      std::cout << " ======= 75%\n";
+      } else if (i == 20) {
+      std::cout << "========== 100%\n";
       } else {
-	continue;
-      }
-  if (i == 10) {
-      std::cout << " half\n"; 
-      } else {
-	continue;
-      }    
-  if (i == 15) {
-      std::cout << " 3 quarters\n";
-      } else {
-      continue;
-      }
-  return 0;
-}
+	std::cout << "\n";
+    }
 
+  }
+  std::cout << "Sequence complete.\n";
+
+  return 0;
+} 
