@@ -1,12 +1,15 @@
 #include <iostream> 
 #include <string>
+#include <vector>
 
 //print quarter, half, 3 quarters at 5, 10, and 15i
 // ***Updated to progress bars***
 // ***Sequence complete at the bottom***
 
 int main(int argc, char *argv[]){
-
+  std::vector<std::string> cmdl{argv, argv + argc};
+  std::cout << cmdl.at(0) << '\n';
+  std::cout << cmdl.size() << '\n';
   for (int i = 1; i <= 20; i++){
       std::cout << i << " ";
   if (i == 5) {
