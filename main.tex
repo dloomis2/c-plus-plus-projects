@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Differential Equation Example}
+\author{David Loomis}
+\date{April 2025}
+
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes the text to double-line spacing
+\doublespacing
+
+\begin{document}
+
+\maketitle
+
+\section{HW9: Section 4.7 Question 7}
+The acceleration of an object is given by
+$a(t)=5\sin(t)$. The initial velocity of the object is $v(0)=-8 m/s$
+Find an equation for $v(t)$.\newline
+$a(t)=\frac{dv}{dt} \Longrightarrow \frac{dv}{dt}=5\sin(t)$\newline
+$dt(\frac{dv}{dt}=5\sin(t))=\int dv=\int5\sin(t)dt$ \newline
+$v(t)=\int5\sin(t)dt=-5\cos(t)+C$\newline
+$v(0)=-5\cos(0)+C=-8m/s$\newline
+$C=-3 \Longrightarrow$ $v(t)=-5\cos(t)-3$
+
+
+
+\end{document}
